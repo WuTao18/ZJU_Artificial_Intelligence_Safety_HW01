@@ -93,7 +93,7 @@ Before 60 rounds, it was under-fitting, and after 60 rounds, it was over-fitting
 
 #### 6. Data augmentation
 
-For more details, see the [ZJU Artificial Intelligence Safety HW01.ipynb]()
+For more details, see the [ZJU Artificial Intelligence Safety HW01.ipynb](https://github.com/WuTao18/ZJU_Artificial_Intelligence_Safety_HW01/blob/main/ZJU%20Artificial%20Intelligence%20Safety%20HW01.ipynb)
 
 ## Reference
 - [CIFAR-10 and CIFAR-100 datasets](https://www.cs.toronto.edu/~kriz/cifar.html)
