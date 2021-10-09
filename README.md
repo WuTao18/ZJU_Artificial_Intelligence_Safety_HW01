@@ -113,7 +113,7 @@ Methods such as **early stopping** and **weight decay** can be adopted to avoid 
 
 #### <span id="lr">1. Learning rate</span>
 The initial learning rate was set to a very small value (1e-5) and then exponentially increased at each step (1.05 times) for training.
-I trained for 200 steps, and we can see that the train loss first decreases and then increases, just like a hook.
+I trained for 236 steps(1.05^236*1e-5 = 1.002), and we can see that the train loss first decreases and then increases, just like a hook.
 
 ![](./imgs/loss_learning_rate00.png)
 
