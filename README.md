@@ -209,7 +209,116 @@ In this case, the batch size has no effect on the test acc, the possible reason 
 
 It can be seen that the optimization effect is not obvious after adjusting parameters. 
 Train loss and test loss are both relatively high, which should be **Model Bias**. 
+
 Next, I used some more complex models.
+
+First, I implemented my own CNN, 
+mainly by increasing output channals of the convolutional layer and adding Batch normalization.
+
+```python
+class MyCNN(nn.Module):
+    def __init__(self):
+        super(MyCNN, self).__init__()
+        # The arguments for commonly used modules:
+        # torch.nn.Conv2d(in_channels, out_channels, kernel_size, stride, padding)
+        # torch.nn.MaxPool2d(kernel_size, stride, padding)
+
+        # input image size: [3, 32, 32]
+        self.cnn_layers = nn.Sequential(
+            nn.Conv2d(3, 64, 3, 1, 1),  # input: 32*32*3, output: 32*32*64
+            nn.BatchNorm2d(64),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2, 0),  # input: 32*32*64, output: 16*16*64
+
+            nn.Conv2d(64, 128, 3, 1, 1),  # input: 16*16*64, output: 16*16*128
+            nn.BatchNorm2d(128),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2, 0),  # input: 16*16*128, output: 8*8*128
+        )
+        self.fc_layers = nn.Sequential(
+            nn.Linear(128 * 8 * 8, 128),
+            nn.ReLU(),
+            nn.Linear(128, 128),
+            nn.ReLU(),
+            nn.Linear(128, 10)
+        )
+
+    def forward(self, x):
+        # input (x): [batch_size, 3, 32, 32]
+        # output: [batch_size, 10]
+
+        # Extract features by convolutional layers.
+        x = self.cnn_layers(x)
+
+        # The extracted feature map must be flatten before going to fully-connected layers.
+        x = x.flatten(1)
+
+        # The features are transformed by fully-connected layers to obtain the final logits.
+        x = self.fc_layers(x)
+        return x
+```
+
+The acc@1 on test set is 76.37%, better than before.
+
+![](./imgs/learning_curve_mycnn00.png)
+![](./imgs/learning_curve_mycnn01.png)
+
+I continued to increase the complexity of the model.
+
+```python
+class MyCNN(nn.Module):
+    def __init__(self):
+        super(MyCNN, self).__init__()
+        # The arguments for commonly used modules:
+        # torch.nn.Conv2d(in_channels, out_channels, kernel_size, stride, padding)
+        # torch.nn.MaxPool2d(kernel_size, stride, padding)
+
+        # input image size: [3, 32, 32]
+        self.cnn_layers = nn.Sequential(
+            nn.Conv2d(3, 64, 3, 1, 1),  # input: 32*32*3, output: 32*32*64
+            nn.BatchNorm2d(64),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2, 0),  # input: 32*32*64, output: 16*16*64
+
+            nn.Conv2d(64, 128, 3, 1, 1),  # input: 16*16*64, output: 16*16*128
+            nn.BatchNorm2d(128),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2, 0),  # input: 16*16*128, output: 8*8*128
+            
+            nn.Conv2d(128, 256, 3, 1, 1),  # intput: 8*8*128, output: 8*8*256
+            nn.BatchNorm2d(256),
+            nn.ReLU(),
+            nn.MaxPool2d(2, 2, 0),  # output: 4*4*256
+        )
+        self.fc_layers = nn.Sequential(
+            nn.Linear(256 * 4 * 4, 256),
+            nn.ReLU(),
+            nn.Linear(256, 256),
+            nn.ReLU(),
+            nn.Linear(256, 10)
+        )
+
+    def forward(self, x):
+        # input (x): [batch_size, 3, 32, 32]
+        # output: [batch_size, 10]
+
+        # Extract features by convolutional layers.
+        x = self.cnn_layers(x)
+
+        # The extracted feature map must be flatten before going to fully-connected layers.
+        x = x.flatten(1)
+
+        # The features are transformed by fully-connected layers to obtain the final logits.
+        x = self.fc_layers(x)
+        return x
+```
+
+The accuracy improved to 80.66%.
+
+![](./imgs/learning_curve_mycnn02.png)
+![](./imgs/learning_curve_mycnn03.png)
+
+I also tried other CNN models.
 
 - ResNet-18
 
@@ -248,6 +357,7 @@ Next, I used some more complex models.
 
 | Model  | Acc@1 | Time |
 | ---- | ---- | ---- |
+| My CNN | 80.66% | 679s |
 | ResNet-18 | 76.64% | 1766s |
 | ResNet-50 | 78.59% | 3859s |
 | ResNet-152 | 77.95% | 8140s |
@@ -278,6 +388,11 @@ transform_test = transforms.Compose([
                          std  = [ 0.2023, 0.1994, 0.2010 ]),
     ])
 ```
+
+- My CNN
+
+![](./imgs/learning_curve_mycnn04.png)
+![](./imgs/learning_curve_mycnn05.png)
 
 - ResNet-18
 
@@ -316,6 +431,7 @@ transform_test = transforms.Compose([
 
 | Model  | Acc@1 | Time |
 | ---- | ---- | ---- |
+| My CNN | 86.81% | 692s |
 | ResNet-18 | 84.90% | 3597s |
 | ResNet-50 | 85.67% | 7803s |
 | ResNet-152 | 86.02% | 19065s |
@@ -327,7 +443,7 @@ I didn't change the optimizer and its parameters, so the results are subject to 
 
 We can see that the acc@1 on testing data is improved, and the data augmentation does alleviate the problem of over-fitting.
 
-For more details, see the [ZJU Artificial Intelligence Safety HW01.ipynb](https://github.com/WuTao18/ZJU_Artificial_Intelligence_Safety_HW01/blob/main/ZJU%20Artificial%20Intelligence%20Safety%20HW01.ipynb)
+For more details, see the [ZJU Artificial Intelligence Safety HW01.ipynb](https://github.com/WuTao18/ZJU_Artificial_Intelligence_Safety_HW01/blob/main/src/ZJU%20Artificial%20Intelligence%20Safety%20HW01.ipynb)
 
 ## Reference
 - [CIFAR-10 and CIFAR-100 datasets](https://www.cs.toronto.edu/~kriz/cifar.html)

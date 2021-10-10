@@ -1,0 +1,416 @@
+Model: CNN from Pytorch tutorial
+Batch size: 128
+Epoch num: 100
+Optimizer: Adam
+----------Training Epoch #0----------
+Finish 1 epoch, Train loss: 1.205859, Train acc@1: 0.563140
+Test loss: 1.088040, Test acc@1: 0.625000
+Saving best model...			Top1 = 62.500000%
+Elapsed time: 6.863462209701538
+----------Training Epoch #1----------
+Finish 2 epoch, Train loss: 0.813640, Train acc@1: 0.712560
+Test loss: 0.837850, Test acc@1: 0.702200
+Saving best model...			Top1 = 70.220000%
+Elapsed time: 13.849509000778198
+----------Training Epoch #2----------
+Finish 3 epoch, Train loss: 0.679688, Train acc@1: 0.760960
+Test loss: 0.747342, Test acc@1: 0.739400
+Saving best model...			Top1 = 73.940000%
+Elapsed time: 20.87139868736267
+----------Training Epoch #3----------
+Finish 4 epoch, Train loss: 0.593134, Train acc@1: 0.791300
+Test loss: 0.691115, Test acc@1: 0.760600
+Saving best model...			Top1 = 76.060000%
+Elapsed time: 27.927090883255005
+----------Training Epoch #4----------
+Finish 5 epoch, Train loss: 0.523745, Train acc@1: 0.814260
+Test loss: 0.716495, Test acc@1: 0.757800
+Elapsed time: 34.86784267425537
+----------Training Epoch #5----------
+Finish 6 epoch, Train loss: 0.460022, Train acc@1: 0.838480
+Test loss: 0.665363, Test acc@1: 0.775700
+Saving best model...			Top1 = 77.570000%
+Elapsed time: 41.83068084716797
+----------Training Epoch #6----------
+Finish 7 epoch, Train loss: 0.400189, Train acc@1: 0.860300
+Test loss: 0.661879, Test acc@1: 0.787000
+Saving best model...			Top1 = 78.700000%
+Elapsed time: 48.72543120384216
+----------Training Epoch #7----------
+Finish 8 epoch, Train loss: 0.351744, Train acc@1: 0.876300
+Test loss: 0.636088, Test acc@1: 0.795600
+Saving best model...			Top1 = 79.560000%
+Elapsed time: 55.66326093673706
+----------Training Epoch #8----------
+Finish 9 epoch, Train loss: 0.316276, Train acc@1: 0.888120
+Test loss: 0.638880, Test acc@1: 0.801300
+Saving best model...			Top1 = 80.130000%
+Elapsed time: 62.68264150619507
+----------Training Epoch #9----------
+Finish 10 epoch, Train loss: 0.267519, Train acc@1: 0.907040
+Test loss: 0.727908, Test acc@1: 0.781500
+Elapsed time: 69.75590634346008
+----------Training Epoch #10----------
+Finish 11 epoch, Train loss: 0.238030, Train acc@1: 0.916580
+Test loss: 0.803070, Test acc@1: 0.780300
+Elapsed time: 76.64479732513428
+----------Training Epoch #11----------
+Finish 12 epoch, Train loss: 0.216481, Train acc@1: 0.924200
+Test loss: 0.714880, Test acc@1: 0.796500
+Elapsed time: 83.6161437034607
+----------Training Epoch #12----------
+Finish 13 epoch, Train loss: 0.196877, Train acc@1: 0.930420
+Test loss: 0.756738, Test acc@1: 0.786300
+Elapsed time: 90.69646072387695
+----------Training Epoch #13----------
+Finish 14 epoch, Train loss: 0.175901, Train acc@1: 0.938420
+Test loss: 0.723724, Test acc@1: 0.801300
+Elapsed time: 97.85322046279907
+----------Training Epoch #14----------
+Finish 15 epoch, Train loss: 0.161299, Train acc@1: 0.943280
+Test loss: 0.770177, Test acc@1: 0.794900
+Elapsed time: 104.68044662475586
+----------Training Epoch #15----------
+Finish 16 epoch, Train loss: 0.152792, Train acc@1: 0.945840
+Test loss: 0.791967, Test acc@1: 0.798600
+Elapsed time: 111.5203902721405
+----------Training Epoch #16----------
+Finish 17 epoch, Train loss: 0.146003, Train acc@1: 0.947480
+Test loss: 0.836810, Test acc@1: 0.778300
+Elapsed time: 118.59059453010559
+----------Training Epoch #17----------
+Finish 18 epoch, Train loss: 0.139350, Train acc@1: 0.950200
+Test loss: 0.812470, Test acc@1: 0.790700
+Elapsed time: 125.5128321647644
+----------Training Epoch #18----------
+Finish 19 epoch, Train loss: 0.135248, Train acc@1: 0.952920
+Test loss: 0.888908, Test acc@1: 0.779600
+Elapsed time: 132.40432024002075
+----------Training Epoch #19----------
+Finish 20 epoch, Train loss: 0.125046, Train acc@1: 0.955660
+Test loss: 0.784912, Test acc@1: 0.798200
+Elapsed time: 139.38547086715698
+----------Training Epoch #20----------
+Finish 21 epoch, Train loss: 0.126176, Train acc@1: 0.955260
+Test loss: 0.847148, Test acc@1: 0.788800
+Elapsed time: 146.15553641319275
+----------Training Epoch #21----------
+Finish 22 epoch, Train loss: 0.118794, Train acc@1: 0.958680
+Test loss: 0.857489, Test acc@1: 0.796200
+Elapsed time: 153.15736317634583
+----------Training Epoch #22----------
+Finish 23 epoch, Train loss: 0.119302, Train acc@1: 0.959040
+Test loss: 0.768478, Test acc@1: 0.800900
+Elapsed time: 160.26499152183533
+----------Training Epoch #23----------
+Finish 24 epoch, Train loss: 0.116755, Train acc@1: 0.958680
+Test loss: 0.864455, Test acc@1: 0.790200
+Elapsed time: 167.26746225357056
+----------Training Epoch #24----------
+Finish 25 epoch, Train loss: 0.115009, Train acc@1: 0.959980
+Test loss: 0.803024, Test acc@1: 0.805400
+Saving best model...			Top1 = 80.540000%
+Elapsed time: 174.16058444976807
+----------Training Epoch #25----------
+Finish 26 epoch, Train loss: 0.104024, Train acc@1: 0.963740
+Test loss: 0.975172, Test acc@1: 0.783900
+Elapsed time: 181.14470076560974
+----------Training Epoch #26----------
+Finish 27 epoch, Train loss: 0.106961, Train acc@1: 0.963900
+Test loss: 0.869876, Test acc@1: 0.790500
+Elapsed time: 187.99167227745056
+----------Training Epoch #27----------
+Finish 28 epoch, Train loss: 0.106893, Train acc@1: 0.963040
+Test loss: 0.888746, Test acc@1: 0.788000
+Elapsed time: 194.79277205467224
+----------Training Epoch #28----------
+Finish 29 epoch, Train loss: 0.098959, Train acc@1: 0.965780
+Test loss: 0.843456, Test acc@1: 0.793700
+Elapsed time: 201.8015627861023
+----------Training Epoch #29----------
+Finish 30 epoch, Train loss: 0.102559, Train acc@1: 0.964140
+Test loss: 0.825241, Test acc@1: 0.799900
+Elapsed time: 208.62187242507935
+----------Training Epoch #30----------
+Finish 31 epoch, Train loss: 0.097279, Train acc@1: 0.966780
+Test loss: 0.818594, Test acc@1: 0.804300
+Elapsed time: 215.46834993362427
+----------Training Epoch #31----------
+Finish 32 epoch, Train loss: 0.104853, Train acc@1: 0.963520
+Test loss: 0.818600, Test acc@1: 0.798900
+Elapsed time: 222.19168186187744
+----------Training Epoch #32----------
+Finish 33 epoch, Train loss: 0.093842, Train acc@1: 0.967660
+Test loss: 0.877184, Test acc@1: 0.786400
+Elapsed time: 229.22491669654846
+----------Training Epoch #33----------
+Finish 34 epoch, Train loss: 0.096458, Train acc@1: 0.965980
+Test loss: 0.837028, Test acc@1: 0.797800
+Elapsed time: 235.9757559299469
+----------Training Epoch #34----------
+Finish 35 epoch, Train loss: 0.090842, Train acc@1: 0.968800
+Test loss: 0.809904, Test acc@1: 0.806600
+Saving best model...			Top1 = 80.660000%
+Elapsed time: 242.54350662231445
+----------Training Epoch #35----------
+Finish 36 epoch, Train loss: 0.089266, Train acc@1: 0.968920
+Test loss: 0.877350, Test acc@1: 0.785700
+Elapsed time: 249.39162063598633
+----------Training Epoch #36----------
+Finish 37 epoch, Train loss: 0.091731, Train acc@1: 0.968860
+Test loss: 0.836451, Test acc@1: 0.795700
+Elapsed time: 256.14901304244995
+----------Training Epoch #37----------
+Finish 38 epoch, Train loss: 0.090132, Train acc@1: 0.969120
+Test loss: 0.861717, Test acc@1: 0.790600
+Elapsed time: 263.0924277305603
+----------Training Epoch #38----------
+Finish 39 epoch, Train loss: 0.084455, Train acc@1: 0.970840
+Test loss: 0.873530, Test acc@1: 0.801000
+Elapsed time: 269.8528161048889
+----------Training Epoch #39----------
+Finish 40 epoch, Train loss: 0.085752, Train acc@1: 0.970540
+Test loss: 0.947424, Test acc@1: 0.778800
+Elapsed time: 276.51300048828125
+----------Training Epoch #40----------
+Finish 41 epoch, Train loss: 0.086923, Train acc@1: 0.969720
+Test loss: 0.912189, Test acc@1: 0.786900
+Elapsed time: 283.03538727760315
+----------Training Epoch #41----------
+Finish 42 epoch, Train loss: 0.090949, Train acc@1: 0.968440
+Test loss: 0.820345, Test acc@1: 0.798500
+Elapsed time: 289.7127387523651
+----------Training Epoch #42----------
+Finish 43 epoch, Train loss: 0.085905, Train acc@1: 0.970040
+Test loss: 0.832101, Test acc@1: 0.797000
+Elapsed time: 296.4443063735962
+----------Training Epoch #43----------
+Finish 44 epoch, Train loss: 0.088149, Train acc@1: 0.970320
+Test loss: 0.871817, Test acc@1: 0.787800
+Elapsed time: 303.0579617023468
+----------Training Epoch #44----------
+Finish 45 epoch, Train loss: 0.083400, Train acc@1: 0.971200
+Test loss: 0.927879, Test acc@1: 0.787800
+Elapsed time: 309.9511287212372
+----------Training Epoch #45----------
+Finish 46 epoch, Train loss: 0.080377, Train acc@1: 0.972520
+Test loss: 0.901279, Test acc@1: 0.787000
+Elapsed time: 316.86382603645325
+----------Training Epoch #46----------
+Finish 47 epoch, Train loss: 0.082546, Train acc@1: 0.971340
+Test loss: 1.072825, Test acc@1: 0.761500
+Elapsed time: 323.3585615158081
+----------Training Epoch #47----------
+Finish 48 epoch, Train loss: 0.084399, Train acc@1: 0.971720
+Test loss: 0.860293, Test acc@1: 0.797400
+Elapsed time: 330.0901372432709
+----------Training Epoch #48----------
+Finish 49 epoch, Train loss: 0.082113, Train acc@1: 0.973160
+Test loss: 0.917094, Test acc@1: 0.778300
+Elapsed time: 336.7256646156311
+----------Training Epoch #49----------
+Finish 50 epoch, Train loss: 0.086878, Train acc@1: 0.969820
+Test loss: 0.891469, Test acc@1: 0.791100
+Elapsed time: 343.5126061439514
+----------Training Epoch #50----------
+Finish 51 epoch, Train loss: 0.078172, Train acc@1: 0.973920
+Test loss: 0.912397, Test acc@1: 0.793000
+Elapsed time: 350.1475865840912
+----------Training Epoch #51----------
+Finish 52 epoch, Train loss: 0.077472, Train acc@1: 0.974420
+Test loss: 0.881755, Test acc@1: 0.794500
+Elapsed time: 356.8823299407959
+----------Training Epoch #52----------
+Finish 53 epoch, Train loss: 0.081044, Train acc@1: 0.973020
+Test loss: 0.833370, Test acc@1: 0.800000
+Elapsed time: 363.5328047275543
+----------Training Epoch #53----------
+Finish 54 epoch, Train loss: 0.078144, Train acc@1: 0.972880
+Test loss: 0.905355, Test acc@1: 0.788700
+Elapsed time: 370.2258324623108
+----------Training Epoch #54----------
+Finish 55 epoch, Train loss: 0.080744, Train acc@1: 0.972660
+Test loss: 0.929801, Test acc@1: 0.782700
+Elapsed time: 376.93219089508057
+----------Training Epoch #55----------
+Finish 56 epoch, Train loss: 0.082305, Train acc@1: 0.972140
+Test loss: 0.831268, Test acc@1: 0.796000
+Elapsed time: 383.5247075557709
+----------Training Epoch #56----------
+Finish 57 epoch, Train loss: 0.076341, Train acc@1: 0.974940
+Test loss: 0.891942, Test acc@1: 0.795000
+Elapsed time: 390.21656131744385
+----------Training Epoch #57----------
+Finish 58 epoch, Train loss: 0.075877, Train acc@1: 0.974600
+Test loss: 0.852252, Test acc@1: 0.798400
+Elapsed time: 396.9248869419098
+----------Training Epoch #58----------
+Finish 59 epoch, Train loss: 0.074424, Train acc@1: 0.974640
+Test loss: 0.849568, Test acc@1: 0.796900
+Elapsed time: 403.7360873222351
+----------Training Epoch #59----------
+Finish 60 epoch, Train loss: 0.078545, Train acc@1: 0.973040
+Test loss: 0.907378, Test acc@1: 0.792600
+Elapsed time: 410.60071563720703
+----------Training Epoch #60----------
+Finish 61 epoch, Train loss: 0.078646, Train acc@1: 0.972480
+Test loss: 0.932661, Test acc@1: 0.795700
+Elapsed time: 417.15471744537354
+----------Training Epoch #61----------
+Finish 62 epoch, Train loss: 0.075362, Train acc@1: 0.974740
+Test loss: 0.898610, Test acc@1: 0.793200
+Elapsed time: 423.9542486667633
+----------Training Epoch #62----------
+Finish 63 epoch, Train loss: 0.081973, Train acc@1: 0.972300
+Test loss: 0.886144, Test acc@1: 0.789500
+Elapsed time: 430.8706474304199
+----------Training Epoch #63----------
+Finish 64 epoch, Train loss: 0.078941, Train acc@1: 0.973080
+Test loss: 0.840174, Test acc@1: 0.801300
+Elapsed time: 437.6448826789856
+----------Training Epoch #64----------
+Finish 65 epoch, Train loss: 0.075637, Train acc@1: 0.974660
+Test loss: 0.912364, Test acc@1: 0.791200
+Elapsed time: 444.4471867084503
+----------Training Epoch #65----------
+Finish 66 epoch, Train loss: 0.073116, Train acc@1: 0.975180
+Test loss: 0.913930, Test acc@1: 0.792900
+Elapsed time: 451.33143186569214
+----------Training Epoch #66----------
+Finish 67 epoch, Train loss: 0.071227, Train acc@1: 0.976680
+Test loss: 0.926648, Test acc@1: 0.788000
+Elapsed time: 458.0742313861847
+----------Training Epoch #67----------
+Finish 68 epoch, Train loss: 0.074003, Train acc@1: 0.974720
+Test loss: 0.996900, Test acc@1: 0.777900
+Elapsed time: 464.87788367271423
+----------Training Epoch #68----------
+Finish 69 epoch, Train loss: 0.072516, Train acc@1: 0.975780
+Test loss: 0.931554, Test acc@1: 0.785600
+Elapsed time: 471.46278738975525
+----------Training Epoch #69----------
+Finish 70 epoch, Train loss: 0.077968, Train acc@1: 0.973620
+Test loss: 0.941635, Test acc@1: 0.790200
+Elapsed time: 478.17649149894714
+----------Training Epoch #70----------
+Finish 71 epoch, Train loss: 0.070980, Train acc@1: 0.975400
+Test loss: 0.882111, Test acc@1: 0.794100
+Elapsed time: 484.7536292076111
+----------Training Epoch #71----------
+Finish 72 epoch, Train loss: 0.077109, Train acc@1: 0.974460
+Test loss: 0.944534, Test acc@1: 0.786700
+Elapsed time: 491.3852767944336
+----------Training Epoch #72----------
+Finish 73 epoch, Train loss: 0.079735, Train acc@1: 0.973340
+Test loss: 0.896096, Test acc@1: 0.789800
+Elapsed time: 498.17507791519165
+----------Training Epoch #73----------
+Finish 74 epoch, Train loss: 0.076277, Train acc@1: 0.973720
+Test loss: 0.933026, Test acc@1: 0.789100
+Elapsed time: 505.00375628471375
+----------Training Epoch #74----------
+Finish 75 epoch, Train loss: 0.078661, Train acc@1: 0.973540
+Test loss: 0.930269, Test acc@1: 0.787200
+Elapsed time: 511.8431906700134
+----------Training Epoch #75----------
+Finish 76 epoch, Train loss: 0.076911, Train acc@1: 0.974240
+Test loss: 0.897048, Test acc@1: 0.788400
+Elapsed time: 518.5335607528687
+----------Training Epoch #76----------
+Finish 77 epoch, Train loss: 0.072264, Train acc@1: 0.975060
+Test loss: 0.992812, Test acc@1: 0.782100
+Elapsed time: 525.5155470371246
+----------Training Epoch #77----------
+Finish 78 epoch, Train loss: 0.068678, Train acc@1: 0.976800
+Test loss: 0.994543, Test acc@1: 0.779300
+Elapsed time: 532.2541551589966
+----------Training Epoch #78----------
+Finish 79 epoch, Train loss: 0.074640, Train acc@1: 0.974440
+Test loss: 0.914558, Test acc@1: 0.784200
+Elapsed time: 538.8545625209808
+----------Training Epoch #79----------
+Finish 80 epoch, Train loss: 0.070480, Train acc@1: 0.976500
+Test loss: 0.910290, Test acc@1: 0.790100
+Elapsed time: 545.4005815982819
+----------Training Epoch #80----------
+Finish 81 epoch, Train loss: 0.074057, Train acc@1: 0.974920
+Test loss: 0.959734, Test acc@1: 0.785000
+Elapsed time: 551.9289753437042
+----------Training Epoch #81----------
+Finish 82 epoch, Train loss: 0.070129, Train acc@1: 0.975740
+Test loss: 0.947279, Test acc@1: 0.788900
+Elapsed time: 558.598198890686
+----------Training Epoch #82----------
+Finish 83 epoch, Train loss: 0.070695, Train acc@1: 0.976280
+Test loss: 0.929057, Test acc@1: 0.780900
+Elapsed time: 565.4497683048248
+----------Training Epoch #83----------
+Finish 84 epoch, Train loss: 0.072979, Train acc@1: 0.975240
+Test loss: 0.923904, Test acc@1: 0.788000
+Elapsed time: 572.1011354923248
+----------Training Epoch #84----------
+Finish 85 epoch, Train loss: 0.071370, Train acc@1: 0.976140
+Test loss: 0.949583, Test acc@1: 0.777500
+Elapsed time: 578.9777491092682
+----------Training Epoch #85----------
+Finish 86 epoch, Train loss: 0.068937, Train acc@1: 0.976920
+Test loss: 0.933908, Test acc@1: 0.789800
+Elapsed time: 585.7120389938354
+----------Training Epoch #86----------
+Finish 87 epoch, Train loss: 0.068062, Train acc@1: 0.976600
+Test loss: 1.003205, Test acc@1: 0.780800
+Elapsed time: 592.4148936271667
+----------Training Epoch #87----------
+Finish 88 epoch, Train loss: 0.066503, Train acc@1: 0.977520
+Test loss: 0.883193, Test acc@1: 0.794900
+Elapsed time: 599.2188136577606
+----------Training Epoch #88----------
+Finish 89 epoch, Train loss: 0.066673, Train acc@1: 0.976980
+Test loss: 0.919035, Test acc@1: 0.796300
+Elapsed time: 605.7672364711761
+----------Training Epoch #89----------
+Finish 90 epoch, Train loss: 0.070334, Train acc@1: 0.976280
+Test loss: 0.988019, Test acc@1: 0.778200
+Elapsed time: 612.529452085495
+----------Training Epoch #90----------
+Finish 91 epoch, Train loss: 0.071958, Train acc@1: 0.975760
+Test loss: 0.927443, Test acc@1: 0.784500
+Elapsed time: 619.4683363437653
+----------Training Epoch #91----------
+Finish 92 epoch, Train loss: 0.067617, Train acc@1: 0.977180
+Test loss: 0.995804, Test acc@1: 0.776700
+Elapsed time: 626.0968782901764
+----------Training Epoch #92----------
+Finish 93 epoch, Train loss: 0.071259, Train acc@1: 0.975340
+Test loss: 0.921725, Test acc@1: 0.795400
+Elapsed time: 632.5386261940002
+----------Training Epoch #93----------
+Finish 94 epoch, Train loss: 0.071911, Train acc@1: 0.976140
+Test loss: 0.953953, Test acc@1: 0.782600
+Elapsed time: 639.2638189792633
+----------Training Epoch #94----------
+Finish 95 epoch, Train loss: 0.068941, Train acc@1: 0.976620
+Test loss: 0.918038, Test acc@1: 0.796400
+Elapsed time: 645.9625279903412
+----------Training Epoch #95----------
+Finish 96 epoch, Train loss: 0.068465, Train acc@1: 0.976800
+Test loss: 0.909859, Test acc@1: 0.791800
+Elapsed time: 652.4945776462555
+----------Training Epoch #96----------
+Finish 97 epoch, Train loss: 0.070983, Train acc@1: 0.976640
+Test loss: 0.923506, Test acc@1: 0.791500
+Elapsed time: 659.1157410144806
+----------Training Epoch #97----------
+Finish 98 epoch, Train loss: 0.070360, Train acc@1: 0.976300
+Test loss: 0.976310, Test acc@1: 0.778000
+Elapsed time: 665.7716526985168
+----------Training Epoch #98----------
+Finish 99 epoch, Train loss: 0.068381, Train acc@1: 0.977460
+Test loss: 0.990775, Test acc@1: 0.784000
+Elapsed time: 672.437335729599
+----------Training Epoch #99----------
+Finish 100 epoch, Train loss: 0.065889, Train acc@1: 0.977760
+Test loss: 0.988066, Test acc@1: 0.781700
+Elapsed time: 678.9970786571503
+
+Test results: Acc@1 = 80.660000%
