@@ -453,3 +453,6 @@ For more details, see the [ZJU Artificial Intelligence Safety HW01.ipynb](https:
 - [ML2021-Spring HW03](https://colab.research.google.com/github/ga642381/ML2021-Spring/blob/main/HW03/HW03.ipynb)
 - [TORCHVISION.MODELS](https://pytorch.org/vision/stable/models.html)
 - [GitHub - meliketoy/wide-resnet.pytorch](https://github.com/meliketoy/wide-resnet.pytorch)
+
+## Security
+[![Security Status](https://www.murphysec.com/platform3/v3/badge/1615794217327046656.svg?t=1)](https://www.murphysec.com/accept?code=8c9187fa8e163c3bf16858e6f35e5fc4&type=1&from=2&t=2)
